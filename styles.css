@@ -1,0 +1,27 @@
+:root{
+--StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: var(--GrayishBlue);
+}
+
+h1, h2, h3{
+    color: var(--DarkGrayishBlue);
+}
