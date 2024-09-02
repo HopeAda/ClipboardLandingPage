@@ -98,6 +98,7 @@ p{
     border: none;
     border-radius: 30px;
     margin: .5rem;
+    font-family: "Bai Jamjuree", sans-serif;
 }
 .blue{
     background-color: var(--LightBlue);
@@ -131,9 +132,13 @@ p{
 }
 .socials{
     margin: 1rem;
+    width: 24px;
+    height: 24px;
 }
 .big{
     margin: 1rem 0;
+    width: 300px;
+    align-self: center;
 }
 
 /* Defining styles for lists */
@@ -143,4 +148,119 @@ ul{
 }
 li{
     margin: 1.5rem 0;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .bg{
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h2 + p{
+        padding: 0 10rem;
+    }
+ 
+    .btn{
+        width: fit-content;
+        padding: 1rem 3rem;
+    }
+    .buttons{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sect{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .big{
+        width: 500px;
+    }
+
+
+    .morewithpics{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .create{
+        max-width: 320px;
+    }
+
+    .together{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        right: 150px;
+    }
+    .together div{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0 0 0 4rem;
+    }
+    .together p{
+        margin: 0;
+        line-height: 2;
+    }
+    .together h3{
+        margin: 1rem 0 .3rem 0;
+    }
+    .together .sections{
+        padding: .2rem;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "logo faq privacy install . socials";
+        align-items: center;
+        justify-items: center;
+        padding: 0 2rem;
+    }
+    .footer ul{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer .socials{
+        margin: 0 .5rem;
+    }
+    .article ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo_small{
+        grid-area: logo;
+    }
+    .article:nth-of-type(1){
+        grid-area: faq;
+    }
+    .article:nth-of-type(2){
+        grid-area: privacy;
+    }
+    .article:nth-of-type(3){
+        grid-area: install;
+    }
+    .contact{
+        grid-area: socials;
+    }
+
 }
