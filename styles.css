@@ -219,7 +219,7 @@ li{
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        right: 150px;
+        right: 170px;
     }
     .together div{
         display: flex;
