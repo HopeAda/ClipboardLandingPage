@@ -99,12 +99,21 @@ p{
     border-radius: 30px;
     margin: .5rem;
     font-family: "Bai Jamjuree", sans-serif;
+    box-shadow: 20px 0 15px 2px var(--LightGray);
 }
 .blue{
     background-color: var(--LightBlue);
+    border-bottom: solid 3px hsla(233, 89%, 43%, 0.774);
+}
+.blue:hover{
+    background-color: hsla(233, 89%, 43%, 0.774);
 }
 .cyan{
     background-color: var(--StrongCyan);
+    border-bottom: solid 3px hsla(171, 90%, 32%, 0.61);
+}
+.cyan:hover{
+    background-color: hsla(171, 90%, 32%, 0.61);
 }
 
 
@@ -201,6 +210,9 @@ li{
     .create{
         max-width: 320px;
     }
+    .devices{
+        margin-top: 3rem;
+    }
 
     .together{
         display: flex;
@@ -233,7 +245,8 @@ li{
         grid-template-areas: "logo faq privacy install . socials";
         align-items: center;
         justify-items: center;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
+        margin-top: 5rem;
     }
     .footer ul{
         display: inline-flex;
@@ -258,9 +271,11 @@ li{
     }
     .article:nth-of-type(3){
         grid-area: install;
+        align-self: start;
     }
     .contact{
         grid-area: socials;
     }
+
 
 }
