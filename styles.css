@@ -260,6 +260,9 @@ li{
         display: flex;
         flex-direction: column;
     }
+    ul li{
+        margin: .5rem 0;
+    }
     .logo_small{
         grid-area: logo;
     }
