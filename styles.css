@@ -3,6 +3,7 @@
 --LightBlue: hsl(233, 100%, 69%);
 --DarkGrayishBlue: hsl(210, 10%, 33%);
 --GrayishBlue: hsl(201, 11%, 66%);
+--LightGray: #f5f6f8;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -26,6 +27,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: "Bai Jamjuree", sans-serif;
 }
 .whole{
     width: 80%;
@@ -41,19 +43,51 @@ body{
     padding: 7rem 0 4rem 0;
 }
 .footer{
-    padding: 2rem;
+    padding: 3rem 0 2rem  0;
     width: 100%;
     color: var(--DarkGrayishBlue);
+    background-color: var(--LightGray);
+    margin-top: 10rem;
+}
+.sections{
+    padding: 1rem 0;
 }
 
 .contact{
     display: inline-flex;
     flex-direction: row;
 }
+.clip{
+    margin-bottom: 2rem;
+}
+.track{
+    margin: 2rem 0;
+}
+
+/* Typography */
 
 h1, h2, h3{
     color: var(--DarkGrayishBlue);
+    font-weight: 600;
+    margin: 1rem 0;
 }
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.3rem;
+}
+p{
+    font-size: .8rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 1.5rem 1rem 1.5rem;
+}
+
+
 
 
 /* Defining Styles For the Buttons */
@@ -63,7 +97,7 @@ h1, h2, h3{
     color: white;
     border: none;
     border-radius: 30px;
-    margin: .8rem;
+    margin: .5rem;
 }
 .blue{
     background-color: var(--LightBlue);
@@ -97,6 +131,9 @@ h1, h2, h3{
 }
 .socials{
     margin: 1rem;
+}
+.big{
+    margin: 1rem 0;
 }
 
 /* Defining styles for lists */
